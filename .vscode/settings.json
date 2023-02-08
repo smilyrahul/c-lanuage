@@ -35,5 +35,6 @@
   ],
   "files.associations": {
     "NEW.C": "cpp"
-  }
+  },
+  "C_Cpp.errorSquiggles": "disabled"
 }
