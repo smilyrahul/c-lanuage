@@ -246,6 +246,7 @@ int main()
         default:
             yellow();
             printf("ENTER CORRECT CHOICE");
+            
         }
     }
 }
