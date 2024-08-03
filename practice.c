@@ -1,24 +1,34 @@
 #include <stdio.h>
+#include <conio.h>
+#include<string.h>
+
 void main()
 {
-  int a[3][3], b[3][3], c[3][3], i, j;
-  printf("Enter 9 number for first matrix");
-  for (i = 0; i <= 2; i++)
-    for (j = 0; j <= 2; j++)
-      scanf("%d", &a[i][j]);
+    char string1[25], string2[25];
+    int l;
+    printf("***** performing string length ******\n");
+    printf("enter only one string \n");
+    scanf("%s", string1);
+    l = strlen(string1);
+    printf("the string length is %d\n\n", l);
+    printf("**** performing string concatenation ****\n");
+    printf("enter two strings\n");
+    scanf("%s%s", string1, string2);
+    printf("the concatenated string is %s\n\n", strcat(string1, string2));
+    printf("***** performing string compare *****\n");
+    printf("enter two strings \n");
+    scanf("%s%s", string1, string2);
+    if (strcmp(string1, string2) == 0){
+        printf("strings are equal\n");
+    }
+    else{
+        printf("strings are not equal\n");
+    }
+    printf("*** performing string copy ****\n");
+    printf("enter the two strings\n");
+    scanf("%s %s", string1, string2);
+    printf("the first string is %s and second string is %s\n", string1, string2);
+    strcpy(string1, string2);
+    printf("the first string is %s and second string is %s\n", string1, string2);
 
-  printf("enter 9 numbes for second matrix\n");
-  for (i = 0; i <= 2; i++)
-    for (j = 0; j <= 2; j++)
-      scanf("%d", &b[i][j]);
-
-          for (i = 0; i <= 2; i++)
-      {
-        for (j = 0; j <= 2; j++)
-        {
-          c[i][j] = a[i][j] + b[i][j];
-          printf("&d", c[i][j]);
-        }
-        printf("\n");
-      }
 }

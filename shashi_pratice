@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+void check()
+{
+    int n;
+    printf("enter number");
+    scanf("%d", &n);
+    if (n %= = 0)
+    {
+        printf("Even number");
+    }
+    else
+    {
+        printf("Odd number");
+    }
+} 
+ void main(){
+    check();
+ }
